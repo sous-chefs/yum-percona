@@ -3,8 +3,7 @@ yum-percona Cookbook
 
 The yum-percona cookbook takes over management of the default
 repositoryids used with the official Percona repositories. It allows
-attribute manipulation of base `updates`, `extras`, `centosplus`, and
-`contrib`.
+attribute manipulation of the `percona` yum channel.
 
 Requirements
 ------------
