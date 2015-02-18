@@ -1,5 +1,5 @@
 #
-# Author:: Sean OMeara (<someara@opscode.com>)
+# Author:: Sean OMeara (<someara@chef.io>)
 # Recipe:: yum::percona
 #
 # Copyright 2013, Opscode
