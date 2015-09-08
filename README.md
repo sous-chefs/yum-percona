@@ -1,5 +1,7 @@
 yum-percona Cookbook
 ============
+[![Build Status](https://travis-ci.org/chef-cookbooks/yum-percona.svg?branch=master)](http://travis-ci.org/chef-cookbooks/yum-percona)
+[![Cookbook Version](https://img.shields.io/cookbook/v/yum-percona.svg)](https://supermarket.chef.io/cookbooks/yum-percona)
 
 The yum-percona cookbook takes over management of the default
 repositoryids used with the official Percona repositories. It allows
