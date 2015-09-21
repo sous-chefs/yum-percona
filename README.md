@@ -9,8 +9,16 @@ attribute manipulation of the `percona` yum channel.
 
 Requirements
 ------------
-* Chef 11 or higher
-* yum cookbook version 3.0.0 or higher
+#### Platforms
+* RHEL/CentOS and derivatives
+* Fedora
+
+#### Chef
+* Chef 11+
+
+#### Cookbooks
+* yum version 3.2.0 or higher
+
 
 Attributes
 ----------
@@ -79,11 +87,11 @@ include_recipe 'yum-percona'
 
 License & Authors
 -----------------
-- Author:: Sean OMeara (<someara@chef.io>)
 
-```text
-Copyright:: 2011-2013 Chef Software, Inc.
+**Author:** Cookbook Engineering Team (<cookbooks@chef.io>)
 
+**Copyright:** 2011-2015, Chef Software, Inc.
+```
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
