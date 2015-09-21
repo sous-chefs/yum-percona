@@ -1,3 +1,3 @@
 @test "install a package" {
-  sudo yum -y install Percona-SQL-client-50
+  sudo yum -y install percona-release
 }
