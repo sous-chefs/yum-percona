@@ -2,6 +2,10 @@ yum-percona Cookbook CHANGELOG
 ======================
 This file is used to list changes made in each version of the yum-percona cookbook.
 
+v0.2.3 (2015-10-28)
+-------------------
+- Fixing Chef 13 nil property deprecation warnings
+
 v0.2.2 (2015-09-21)
 -------------------
 - Added Chef standard Rubocop file and resolved all warnings
