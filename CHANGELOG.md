@@ -1,13 +1,10 @@
-yum-percona Cookbook CHANGELOG
-======================
+# yum-percona Cookbook CHANGELOG
 This file is used to list changes made in each version of the yum-percona cookbook.
 
-v0.2.3 (2015-10-28)
--------------------
+## v0.2.3 (2015-10-28)
 - Fixing Chef 13 nil property deprecation warnings
 
-v0.2.2 (2015-09-21)
--------------------
+## v0.2.2 (2015-09-21)
 - Added Chef standard Rubocop file and resolved all warnings
 - Updated platforms in Kitchen CI config
 - Add supported platforms to the metadata
@@ -19,21 +16,14 @@ v0.2.2 (2015-09-21)
 - Added source_url and issues_url metadata
 - Update the bats test to install a package available on all RHEL releases
 
-v0.2.0 (2014-02-14)
--------------------
+## v0.2.0 (2014-02-14)
 - Updating test harness
 
-
-v0.1.6
-------
+## v0.1.6
 Fixing README to reflect the proper yum channels
 
-
-v0.1.4
-------
+## v0.1.4
 Adding CHANGELOG.md
 
-
-v0.1.0
-------
+## v0.1.0
 initial release
