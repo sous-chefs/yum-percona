@@ -1,3 +1,3 @@
 @test "install a package" {
-  sudo yum -y install percona-release
+    yum -y install percona-release
 }
