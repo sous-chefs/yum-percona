@@ -3,7 +3,7 @@ maintainer 'Chef Software, Inc.'
 maintainer_email 'cookbooks@chef.io'
 license 'Apache 2.0'
 description 'Installs and configures the Percona Yum repository'
-version '0.2.4'
+version '0.2.5'
 
 depends 'yum', '~> 3.2'
 
