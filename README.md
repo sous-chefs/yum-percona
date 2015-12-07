@@ -43,7 +43,7 @@ default['yum']['percona']['enabled'] = true
 ## Usage Example
 To disable the Percona repository through a Role or Environment definition
 
-```
+```ruby
 default_attributes(
   :yum => {
     :percona => {
@@ -57,7 +57,7 @@ default_attributes(
 
 To enable the Percona repository with a wrapper cookbook, place the following in a recipe:
 
-```
+```ruby
 node.default['yum']['percona']['enabled'] = true
 include_recipe 'yum-percona'
 ```
@@ -65,7 +65,7 @@ include_recipe 'yum-percona'
 ## More Examples
 Point the base and updates repositories at an internally hosted server.
 
-```
+```ruby
 node.default['yum']['percona']['enabled'] = true
 node.default['yum']['percona']['mirrorlist'] = nil
 node.default['yum']['percona']['baseurl'] = 'https://internal.example.com/centos/6/os/x86_64'
