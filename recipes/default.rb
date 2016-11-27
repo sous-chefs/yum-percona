@@ -1,6 +1,7 @@
 #
 # Author:: Sean OMeara (<someara@chef.io>)
-# Recipe:: yum::percona
+# Recipe:: default
+# Cookbook:: yum-percona
 #
 # Copyright:: 2013-2016, Chef Software, Inc.
 #
