@@ -1,3 +1,4 @@
+language: ruby
 sudo: required
 dist: trusty
 
@@ -18,17 +19,19 @@ branches:
 
 services: docker
 
-env:
-  matrix:
-  - INSTANCE=default-centos-5
-  - INSTANCE=default-centos-6
-  - INSTANCE=default-centos-7
-
 before_script:
   - sudo iptables -L DOCKER || ( echo "DOCKER iptables chain missing" ; sudo iptables -N DOCKER )
   - eval "$(/opt/chefdk/bin/chef shell-init bash)"
 
 script: KITCHEN_LOCAL_YAML=.kitchen.docker.yml /opt/chefdk/embedded/bin/kitchen verify ${INSTANCE}
+
+env:
+  - INSTANCE=default-centos-5 CHEF=latest
+  - INSTANCE=default-centos-6 CHEF=latest
+  - INSTANCE=default-centos-7 CHEF=latest
+  - INSTANCE=default-centos-5 CHEF=12.1.0
+  - INSTANCE=default-centos-6 CHEF=12.1.0
+  - INSTANCE=default-centos-7 CHEF=12.1.0
 
 matrix:
   include:
