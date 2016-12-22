@@ -1,6 +1,11 @@
 # yum-percona Cookbook CHANGELOG
 This file is used to list changes made in each version of the yum-percona cookbook.
 
+## 2.0.1 (2016-12-22)
+
+- Depend on the latest compat_resource cookbook
+- Cookstyle fixes
+
 ## 2.0.0 (2016-11-26)
 - Replace yum dependency with compat_resource
 - Switch to inspec for testing
