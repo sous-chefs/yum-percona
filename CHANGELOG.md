@@ -1,6 +1,11 @@
 # yum-percona Cookbook CHANGELOG
 This file is used to list changes made in each version of the yum-percona cookbook.
 
+## 3.0.0 (2018-02-16)
+
+- Require Chef 12.14+ and remove the compat_resource dep
+- Use SPDX compliant license string
+
 ## 2.0.1 (2016-12-22)
 
 - Depend on the latest compat_resource cookbook
