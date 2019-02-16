@@ -26,7 +26,10 @@ The following attributes are set by default
 ```ruby
 default['yum']['percona']['description'] = 'Percona MySQL and tools repository'
 default['yum']['percona']['baseurl'] = "http://repo.percona.com/centos/6/os/$basearch/"
-default['yum']['percona']['gpgkey'] = 'https://repo.percona.com/yum/PERCONA-PACKAGING-KEY'
+default['yum']['percona']['gpgkey'] = [
+  'https://repo.percona.com/yum/PERCONA-PACKAGING-KEY',
+  'https://repo.percona.com/yum/RPM-GPG-KEY-Percona',
+]
 default['yum']['percona']['gpgcheck'] = true
 default['yum']['percona']['enabled'] = true
 ```
@@ -43,7 +46,10 @@ default['yum']['percona']['enabled'] = true
     description 'Percona MySQL and tools repository'
     enabled true
     gpgcheck true
-    gpgkey 'https://repo.percona.com/yum/PERCONA-PACKAGING-KEY'
+    gpgkey [
+      'https://repo.percona.com/yum/PERCONA-PACKAGING-KEY',
+      'https://repo.percona.com/yum/RPM-GPG-KEY-Percona',
+    ]
   end
 ```
 
