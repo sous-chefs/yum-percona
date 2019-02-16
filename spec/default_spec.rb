@@ -14,7 +14,10 @@ describe 'yum-percona::default' do
 
     it 'creates yum_repository[percona]' do
       expect(chef_run).to create_yum_repository('percona').with(
-        gpgkey: 'https://repo.percona.com/yum/PERCONA-PACKAGING-KEY'
+        gpgkey: [
+          'https://repo.percona.com/yum/PERCONA-PACKAGING-KEY',
+          'https://repo.percona.com/yum/RPM-GPG-KEY-Percona',
+        ]
       )
     end
   end

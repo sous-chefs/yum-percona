@@ -1,3 +1,3 @@
-describe command('yum -y install percona-release') do
+describe command('yum -y install proxysql') do
   its('exit_status') { should eq 0 }
 end
