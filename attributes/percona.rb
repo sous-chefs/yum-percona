@@ -1,6 +1,5 @@
 default['yum']['percona']['description'] = 'Percona MySQL and tools repository'
-default['yum']['percona']['baseurl'] = case node['platform']
-                                       when 'amazon'
+default['yum']['percona']['baseurl'] = if platform?('amazon')
                                          'http://repo.percona.com/centos/6/os/$basearch/'
                                        else
                                          "http://repo.percona.com/centos/#{node['platform_version'].to_i}/os/$basearch/"
