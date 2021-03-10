@@ -5,6 +5,7 @@ This file is used to list changes made in each version of the yum-percona cookbo
 ## Unreleased
 
 - Sous Chefs Adoption
+- Update InSpec tests
 
 ## 3.0.0 (2018-02-16)
 
