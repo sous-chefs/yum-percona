@@ -2,6 +2,8 @@
 
 This file is used to list changes made in each version of the yum-percona cookbook.
 
+## Unreleased
+
 ## 3.1.0 - *2021-03-10*
 
 - Sous Chefs Adoption
