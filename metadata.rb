@@ -1,14 +1,16 @@
-name 'yum-percona'
-maintainer 'Chef Software, Inc.'
-maintainer_email 'cookbooks@chef.io'
-license 'Apache-2.0'
-description 'Installs and configures the Percona Yum repository'
-version '3.0.0'
+name              'yum-percona'
+maintainer        'Sous Chefs'
+maintainer_email  'help@sous-chefs.org'
+license           'Apache-2.0'
+description       'Installs and configures the Percona Yum repository'
+version           '3.0.0'
+source_url        'https://github.com/sous-chefs/yum-percona'
+issues_url        'https://github.com/sous-chefs/yum-percona/issues'
+chef_version      '>= 12.15'
 
-%w(amazon centos fedora oracle redhat scientific).each do |os|
-  supports os
-end
-
-source_url 'https://github.com/chef-cookbooks/yum-percona'
-issues_url 'https://github.com/chef-cookbooks/yum-percona/issues'
-chef_version '>= 12.15'
+supports 'amazon'
+supports 'centos'
+supports 'fedora'
+supports 'oracle'
+supports 'redhat'
+supports 'scientific'
