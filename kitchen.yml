@@ -5,18 +5,15 @@ provisioner:
   name: chef_zero
   deprecations_as_errors: true
   chef_license: accept-no-persist
+  enforce_idempotency: true
+  multiple_converge: 2
 
 verifier:
   name: inspec
 
 platforms:
-  - name: amazonlinux
-    driver_config:
-      box: mvbcoding/awslinux
   - name: amazonlinux-2
-  - name: centos-6
   - name: centos-7
-  - name: centos-8
 
 suites:
   - name: default
