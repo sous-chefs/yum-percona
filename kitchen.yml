@@ -12,8 +12,6 @@ verifier:
 platforms:
   - name: amazonlinux-2
   - name: centos-7
-  - name: centos-8
-  - name: fedora-latest
 
 suites:
   - name: default
