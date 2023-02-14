@@ -18,7 +18,7 @@ jobs:
       issues: write
 
   integration:
-    needs: lint-unit
+    needs: "lint-unit"
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -47,6 +47,6 @@ jobs:
       - name: Print debug output on failure
         if: failure()
         run: |
-            set -x
-            sudo journalctl -l --since today
-            KITCHEN_LOCAL_YAML=kitchen.dokken.yml /usr/bin/kitchen exec ${{ matrix.suite }}-${{ matrix.os }} -c "journalctl -l"
+          set -x
+          sudo journalctl -l --since today
+          KITCHEN_LOCAL_YAML=kitchen.dokken.yml /usr/bin/kitchen exec ${{ matrix.suite }}-${{ matrix.os }} -c "journalctl -l"
