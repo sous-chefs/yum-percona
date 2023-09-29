@@ -2,6 +2,8 @@
 
 This file is used to list changes made in each version of the yum-percona cookbook.
 
+## Unreleased
+
 ## 3.2.1 - *2023-09-29*
 
 - Standardise files with files in sous-chefs/repo-management
