@@ -2,7 +2,7 @@
 
 This file is used to list changes made in each version of the yum-percona cookbook.
 
-## Unreleased
+## 3.2.3 - *2023-12-21*
 
 ## 3.2.2 - *2023-10-03*
 
