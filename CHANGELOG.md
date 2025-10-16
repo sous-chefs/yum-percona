@@ -2,6 +2,13 @@
 
 This file is used to list changes made in each version of the yum-percona cookbook.
 
+## [3.2.6](https://github.com/sous-chefs/yum-percona/compare/3.2.5...v3.2.6) (2025-10-16)
+
+
+### Bug Fixes
+
+* **ci:** Update workflows to use release pipeline ([#30](https://github.com/sous-chefs/yum-percona/issues/30)) ([e3ff678](https://github.com/sous-chefs/yum-percona/commit/e3ff6788ef721f0811205fc1a342c9a242efdc0d))
+
 ## 3.2.2 - *2023-10-03*
 
 * Standardise files with files in sous-chefs/repo-management
