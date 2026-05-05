@@ -2,6 +2,22 @@
 
 This file is used to list changes made in each version of the yum-percona cookbook.
 
+## [4.0.0](https://github.com/sous-chefs/yum-percona/compare/v3.2.6...v4.0.0) (2026-05-05)
+
+
+### ⚠ BREAKING CHANGES
+
+* migrate yum-percona to custom resource ([#34](https://github.com/sous-chefs/yum-percona/issues/34))
+
+### Features
+
+* migrate yum-percona to custom resource ([#34](https://github.com/sous-chefs/yum-percona/issues/34)) ([b9d91ce](https://github.com/sous-chefs/yum-percona/commit/b9d91ce1f08f7c447d8fc4e7793a1c8853e89b80))
+
+
+### Bug Fixes
+
+* **ci:** Update workflows to use release pipeline ([#30](https://github.com/sous-chefs/yum-percona/issues/30)) ([e3ff678](https://github.com/sous-chefs/yum-percona/commit/e3ff6788ef721f0811205fc1a342c9a242efdc0d))
+
 ## [3.2.6](https://github.com/sous-chefs/yum-percona/compare/3.2.5...v3.2.6) (2025-10-16)
 
 
