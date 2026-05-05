@@ -52,6 +52,6 @@ This cookbook only creates or removes a yum repository file. It does not install
 
 ## Sources
 
-* https://www.percona.com/release-lifecycle-overview/
-* https://docs.percona.com/percona-software-repositories/installing.html
-* https://docs.percona.com/percona-server/8.0/yum-repo.html
+* [Percona release lifecycle overview](https://www.percona.com/release-lifecycle-overview/)
+* [Percona software repositories installation](https://docs.percona.com/percona-software-repositories/installing.html)
+* [Percona Server 8.0 YUM repository documentation](https://docs.percona.com/percona-server/8.0/yum-repo.html)
