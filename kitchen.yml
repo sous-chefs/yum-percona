@@ -1,23 +1,40 @@
+---
 driver:
   name: vagrant
 
+x-run_lists:
+  default: &default_run_list
+    - recipe[test::default]
+
+x-verifiers:
+  default: &default_verifier
+    inspec_tests:
+      - path: test/integration/default
+
 provisioner:
-  name: chef_zero
-  deprecations_as_errors: true
-  chef_license: accept-no-persist
+  name: chef_infra
+  product_name: chef
+  product_version: <%= ENV['CHEF_VERSION'] || 'latest' %>
+  channel: stable
+  chef_license: accept
   enforce_idempotency: true
   multiple_converge: 2
+  deprecations_as_errors: true
 
 verifier:
   name: inspec
 
 platforms:
-  - name: amazonlinux-2
   - name: almalinux-8
-  - name: centos-stream-8
-  - name: centos-7
+  - name: almalinux-9
+  - name: amazonlinux-2023
+  - name: centos-stream-9
+  - name: oraclelinux-8
+  - name: oraclelinux-9
+  - name: rockylinux-8
+  - name: rockylinux-9
 
 suites:
   - name: default
-    run_list:
-      - recipe[yum-percona::default]
+    run_list: *default_run_list
+    verifier: *default_verifier
